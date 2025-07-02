@@ -1,12 +1,14 @@
 version: 0.2
- 
+
 phases:
   build:
     commands:
       - gcc hello-world.c -o hello-world-app
-      
+      - mkdir -p output
+      - mv hello-world-app output/
+
 artifacts:
   files:
     - '**/*'
-  base-directory: s3://devops99001/first
+  base-directory: output
   discard-paths: no
