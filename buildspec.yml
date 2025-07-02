@@ -8,5 +8,5 @@ phases:
 artifacts:
   files:
     - '**/*'
-  base-directory: s3://devops99001/first/
+  base-directory: s3://devops99001/first
   discard-paths: no
